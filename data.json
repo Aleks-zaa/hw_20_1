@@ -1,0 +1,66 @@
+[
+  {
+    "model": "cars.category",
+    "pk": 1,
+    "fields": {
+      "name": "bmw",
+      "description": "Бавария"
+    }
+  },
+  {
+    "model": "cars.category",
+    "pk": 2,
+    "fields": {
+      "name": "Reno",
+      "description": "Reno Франция"
+    }
+  },
+  {
+    "model": "cars.category",
+    "pk": 3,
+    "fields": {
+      "name": "Opel",
+      "description": "Opel Германия"
+    }
+  },
+  {
+    "model": "cars.product",
+    "pk": 1,
+    "fields": {
+      "name": "X5",
+      "description": "Новый",
+      "photo": "",
+      "category": 1,
+      "price": 100000.0,
+      "created_at": "2024-05-20",
+      "updated_at": "2024-05-20"
+    }
+  },
+  {
+    "model": "cars.product",
+    "pk": 2,
+    "fields": {
+      "name": "Logan",
+      "description": "Логан белый",
+      "photo": "",
+      "category": 2,
+      "price": 70000.0,
+      "created_at": "2024-05-20",
+      "updated_at": "2024-05-20"
+    }
+  },
+  {
+    "model": "cars.product",
+    "pk": 3,
+    "fields": {
+      "name": "Opel Astra",
+      "description": "Astra красная",
+      "photo": "",
+      "category": 3,
+      "price": 50000.0,
+      "created_at": "2024-05-20",
+      "updated_at": "2024-05-20"
+    }
+  }
+
+]
