@@ -20,11 +20,11 @@ class Product(models.Model):
     description = models.TextField(verbose_name='Описание')
     photo = models.ImageField(upload_to='cars/media', blank=True, null=True, verbose_name='Изображение')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name='Категория',
-                                 blank=True, null=True, related_name='products')
+                                 related_name='products')
     price = models.IntegerField(verbose_name='Цена за покупку', blank=True,
                                 null=True)
-    created_at = models.DateField(auto_now_add=True, verbose_name='Дата создания')
-    updated_at = models.DateField(auto_now=True, verbose_name='Дата последнего изменения')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
+    updated_at = models.DateTimeField(auto_now=True, verbose_name='Дата последнего изменения')
 
     class Meta:
         verbose_name = 'Продукт'
